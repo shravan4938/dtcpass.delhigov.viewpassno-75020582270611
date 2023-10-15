@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | e-Bus Pass</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="icon" href="DTC1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #blink {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2f8a12;
+            transition: 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page-->
+    <div class="page text-center">
+
+        <header class="absolute">
+            <h4 class="ebuspass">e- Bus Pass</h4>
+        </header><br>
+
+        <!-- Page Content-->
+        <main>
+        <div class="box">  
+            <div class="maintop text-center">
+                <u> DTC And Cluster Bus Pass</u>
+            </div>
+
+            <div class="photo">
+                <img src="DP-min.jpg" height="250px" width="250px"
+                    style=" margin-top: 10px ; opacity: 65%;" >
+
+            <div class="name">
+                <b>AKHIL SONI</b>
+                <br><br>
+                <b>Student All route AC/Non AC</b>
+            </div><br>
+
+            <div class="passno">
+                <b>Bus Pass No. </b><b id="blink">7502032390022</b>
+            </div><br>
+
+            <script type="text/javascript">
+                var blink = document.getElementById('blink');
+                setInterval(function () {
+                    blink.style.opacity = (blink.style.opacity == 0 ? 2 : 0);
+                }, 1000);
+            </script>
+
+            <label class="date" style="font-size:20px;color:red;"><b>Valid from 14/10/2023 to 13/1/2024</b></label>
+            
+        </div>
+            <div class="qrc">
+                <div class="sign">
+                    <img src="sign.png" height="80px" width="80px">
+                </div>
+                <div class="qr">
+                    <img src="qr.png" height="80px" width="80px" />
+                </div>
+        </main>
+        <!--footer-->
+        <div class="footer" >
+            <div class="copyright" >
+                Copyright &copy; - Delhi e-Governance Society 
+                <b style="font-weight: 900;"> 2023</b>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

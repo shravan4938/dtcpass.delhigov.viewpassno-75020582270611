@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 13px;
+    background-color: #d9eeef;
+}
+.absolute{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #0000004b;
+    z-index: 3;
+}
+.ebuspass{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    color: #01a2a6;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+main{
+    background-image: url(bg.png) ;
+    background-position: left top;
+    background-size:100%;
+    background-repeat: repeat;
+    margin: 58px 15px;
+}
+.maintop{
+    font-family: serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 10px;
+    outline:1px solid rgba(128, 128, 128, 0.343); 
+    color:#01a2a6;
+}
+.photo{
+    padding: 10px auto;padding-bottom: 13px; outline:1px solid rgba(128, 128, 128, 0.343)
+}
+.name{
+    font-size:20px;margin: 0 auto;padding: 0 9px;
+}
+.passno{
+    font-size:25px;color:black;
+    line-height: 1.57143;
+    
+}
+.qrc{
+    outline:1px solid rgba(128, 128, 128, 0.343);
+    display: flex;
+}
+.qr{
+    width: 50%;
+    padding: 6px;
+}
+.sign{
+    padding: 6px;
+    width: 50%;
+    outline: 1px solid rgba(128, 128, 128, 0.343);
+    display: flex;
+    justify-content: left;
+}
+.footer{
+    background-color:#01a2a6;
+    margin: 0; 
+    margin-top: 60px;  
+    white-space: nowrap;
+    padding-top: 68px;
+    padding-bottom: 25px;
+}
+.copyright{
+    color:black; 
+    font: 13px sans-serif; 
+    font-weight: 700;
+    margin: 20px auto;
+    
+    white-space: nowrap;
+}
+.text-center{
+    text-align: center;
+}
+@media screen and (max-width:416px){
+    .passno{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:386px){
+    .date{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:345px){
+    body{
+        overflow: hidden;
+    }
+}
